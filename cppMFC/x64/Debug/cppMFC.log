@@ -1,0 +1,7 @@
+﻿  main.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+D:\Project\MFC\cppMFC\resource.h(8,1): warning C4005: ID_FILE_OPEN: изменение макроопределения
+D:\Program\Microsoft Visual Studio\Community\VC\Tools\MSVC\14.37.32822\atlmfc\include\afxres.h(215,1): message : см. предыдущее определение "ID_FILE_OPEN"
+D:\Project\MFC\cppMFC\resource.h(9,1): warning C4005: ID_FILE_SAVE: изменение макроопределения
+D:\Program\Microsoft Visual Studio\Community\VC\Tools\MSVC\14.37.32822\atlmfc\include\afxres.h(217,1): message : см. предыдущее определение "ID_FILE_SAVE"
+  cppMFC.vcxproj -> D:\Project\MFC\cppMFC\x64\Debug\cppMFC.exe
