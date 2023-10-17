@@ -126,8 +126,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CMyDialog.h" />
-    <ClInclude Include="CMyFrameWnd.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
