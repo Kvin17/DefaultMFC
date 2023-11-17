@@ -9,6 +9,9 @@ class CMyFrameWnd :public CFrameWnd
 {
 public:
     int my_poly_coef[5];
+    static const int my_out_size = 10;
+    int my_poly[5], my_poly_func[2 * my_out_size+1];
+
 
     CMyFrameWnd::CMyFrameWnd();
 
@@ -17,6 +20,7 @@ protected:
     //обчислення
     afx_msg void OnCalculateData();
     afx_msg void OnCalculateRun();
+    afx_msg void OnCalculateResult();
         //Кнопки
     afx_msg void OnAbout();
     afx_msg void OnExit();
@@ -95,6 +99,16 @@ CMyFrameWnd::CMyFrameWnd()
         CMyDialog my_Dialog;
         my_Dialog.DoModal();
     }
+    afx_msg void CMyFrameWnd::OnCalculateResult()
+    {
+        CString buf_data, res_data;
+        for (int i = 0; i < 2 * my_out_size + 1; i++)
+        {
+            buf_data.Format("y[%d] = %d \n, i, my_poly_func[i]");
+            res_data += buf_data;
+        }
+        MessageBox(res_data);
+    }
     afx_msg void CMyFrameWnd::OnCalculateRun()
     {
         CString buf_data;
@@ -102,6 +116,11 @@ CMyFrameWnd::CMyFrameWnd()
         buf_data.Format("a1 = %d, b1 = %d, a2 = %d, b2 = %d, c2 = %d ", my_poly_coef[0],
             my_poly_coef[1], my_poly_coef[2], my_poly_coef[3], my_poly_coef[4]);
         MessageBox(buf_data);
+        HINSTANCE my_hdll = AfxLoadLibrary("asmDynamicFunc.dll");
+        typedef void (*CALFUN)(int*, int*, int);
+        CALFUN my_CalcFunc = (CALFUN)GetProcAddress(my_hdll, "CalculateFunc");
+        (*my_CalcFunc)(my_poly_coef, my_poly_func, 2 * my_out_size + 1);
+        AfxFreeLibrary(my_hdll);
     }
     //Кнопки
     afx_msg void CMyFrameWnd::OnAbout()
@@ -110,8 +129,8 @@ CMyFrameWnd::CMyFrameWnd()
     }
     afx_msg void CMyFrameWnd::OnExit()
     {
-        ::MessageBox(NULL, (LPCSTR)"...", (LPCSTR)"QUIT", MB_OK);
-        //SendMessage(WM_CLOSE);
+       // ::MessageBox(NULL, (LPCSTR)"...", (LPCSTR)"QUIT", MB_OK);
+       SendMessage(WM_CLOSE);
     }
     afx_msg void CMyFrameWnd::OnFileOpen()
     {
@@ -127,14 +146,16 @@ CMyFrameWnd::CMyFrameWnd()
     }
     afx_msg void CMyFrameWnd::OnProjectData()
     {
-        ::MessageBox(NULL, (LPCSTR)"...", (LPCSTR)"ProjectData", MB_OK);
+        //::MessageBox(NULL, (LPCSTR)"...", (LPCSTR)"ProjectData", MB_OK);
     }
     afx_msg void CMyFrameWnd::OnProjectRun()
     {
-        ::MessageBox(NULL, (LPCSTR)"...", (LPCSTR)"ProjectRun", MB_OK);
+        OnCalculateData();
+
+        //::MessageBox(NULL, (LPCSTR)my_poly_coef, (LPCSTR)"dd", MB_OK);
     }
     afx_msg void CMyFrameWnd::OnResultText()
-    {
+    {::MessageBox(NULL, (LPCSTR)"l", (LPCSTR)"dd", MB_OK);
         ::MessageBox(NULL, (LPCSTR)"...", (LPCSTR)"ResultText", MB_OK);
     }
     afx_msg void CMyFrameWnd::OnResultGraf()
@@ -158,7 +179,7 @@ CMyFrameWnd::CMyFrameWnd()
         CDialog::OnInitDialog();
         CString buf_data;
         buf_data.Format("%d", 0);
-        my_DlgEdit.SetWindowTextA(buf_data);
+        my_DlgEdit.SetWindowText(buf_data);
         return 1;
     }
     void CMyDialog::OnOK()

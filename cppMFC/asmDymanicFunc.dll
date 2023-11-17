@@ -1,0 +1,8 @@
+void CalculateFunc(int* in_mas, int* out_mas, int out_size)
+{
+	_asm
+	{
+		mov eax, 5
+		mov ebx, eax
+	}
+}
