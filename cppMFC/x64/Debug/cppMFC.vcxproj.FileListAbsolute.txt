@@ -1,1 +1,2 @@
 D:\Project\MFC\cppMFC\x64\Debug\cppMFC.exe
+D:\Project\DefaultMFC\cppMFC\x64\Debug\cppMFC.exe

@@ -4,31 +4,27 @@
 #include <windows.h>
 #include "resource.h"
 #include "CMyFrameWnd.h"
-    
+
+
+#define LIST_SIZE 4
+#define EDIT_SIZE 3
+
 class CMyDialog : public CDialog
 {
 public :
 	CMyDialog(UINT nIDTemplate = IDD_DIALOG1, CWnd* pParentWnd = NULL);
-	CEdit my_DlgEdit;
+	CEdit my_DlgEdit[EDIT_SIZE];
+	CListBox my_listbox[LIST_SIZE];
+	int list_coef_range = 10;
 
+#ifdef AFX_DESIGN_TIME
+	enum { IDD = IDD_DIALOG1 };
+#endif
 protected:
 	void DoDataExchange(CDataExchange* pDX);
-	virtual BOOL OnInitDialog()
-	{
-		CDialog::OnInitDialog();
-		CString buf_data;
-		buf_data.Format("%d", 0);
-		my_DlgEdit.SetWindowTextA(buf_data);
-	}
-	virtual void OnOK()
-	{
-		CString tmp_data;
-		CMyFrameWnd* pMainWnd = (CMyFrameWnd*)(this->GetParent());
-		my_DlgEdit.GetWindowText(tmp_data);
-		pMainWnd->my_poly_coef[0] = atoi(tmp_data);
-
-		CDialog::OnOK();
-	}
+	void LoadListBox();
+	virtual BOOL OnInitDialog();
+	virtual void OnOK();
 
 	DECLARE_MESSAGE_MAP();
 };

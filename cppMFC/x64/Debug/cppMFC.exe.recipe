@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Project\MFC\cppMFC\x64\Debug\cppMFC.exe</FullPath>
+      <FullPath>D:\Project\DefaultMFC\cppMFC\x64\Debug\cppMFC.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

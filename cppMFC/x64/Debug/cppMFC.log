@@ -1,7 +1,51 @@
-﻿  main.cpp
+﻿  CMyDialog.cpp
   _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
-D:\Project\MFC\cppMFC\resource.h(11,1): warning C4005: ID_FILE_OPEN: изменение макроопределения
-D:\Program\Microsoft Visual Studio\Community\VC\Tools\MSVC\14.37.32822\atlmfc\include\afxres.h(215,1): message : см. предыдущее определение "ID_FILE_OPEN"
-D:\Project\MFC\cppMFC\resource.h(12,1): warning C4005: ID_FILE_SAVE: изменение макроопределения
-D:\Program\Microsoft Visual Studio\Community\VC\Tools\MSVC\14.37.32822\atlmfc\include\afxres.h(217,1): message : см. предыдущее определение "ID_FILE_SAVE"
-  cppMFC.vcxproj -> D:\Project\MFC\cppMFC\x64\Debug\cppMFC.exe
+D:\Project\DefaultMFC\cppMFC\resource.h(16,1): warning C4005: ID_FILE_OPEN: изменение макроопределения
+  (компиляция исходного файла "CMyDialog.cpp")
+  D:\Program\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\atlmfc\include\afxres.h(215,1):
+  см. предыдущее определение "ID_FILE_OPEN"
+  
+D:\Project\DefaultMFC\cppMFC\resource.h(17,1): warning C4005: ID_FILE_SAVE: изменение макроопределения
+  (компиляция исходного файла "CMyDialog.cpp")
+  D:\Program\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\atlmfc\include\afxres.h(217,1):
+  см. предыдущее определение "ID_FILE_SAVE"
+  
+  CMyFrameWnd.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+D:\Project\DefaultMFC\cppMFC\resource.h(16,1): warning C4005: ID_FILE_OPEN: изменение макроопределения
+  (компиляция исходного файла "CMyFrameWnd.cpp")
+  D:\Program\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\atlmfc\include\afxres.h(215,1):
+  см. предыдущее определение "ID_FILE_OPEN"
+  
+D:\Project\DefaultMFC\cppMFC\resource.h(17,1): warning C4005: ID_FILE_SAVE: изменение макроопределения
+  (компиляция исходного файла "CMyFrameWnd.cpp")
+  D:\Program\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\atlmfc\include\afxres.h(217,1):
+  см. предыдущее определение "ID_FILE_SAVE"
+  
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(205,37): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(206,37): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(221,49): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(222,57): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(226,75): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(231,94): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(231,41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(235,96): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(235,42): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(239,94): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(239,41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(257,69): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(261,69): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  main.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+D:\Project\DefaultMFC\cppMFC\resource.h(16,1): warning C4005: ID_FILE_OPEN: изменение макроопределения
+  (компиляция исходного файла "main.cpp")
+  D:\Program\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\atlmfc\include\afxres.h(215,1):
+  см. предыдущее определение "ID_FILE_OPEN"
+  
+D:\Project\DefaultMFC\cppMFC\resource.h(17,1): warning C4005: ID_FILE_SAVE: изменение макроопределения
+  (компиляция исходного файла "main.cpp")
+  D:\Program\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\atlmfc\include\afxres.h(217,1):
+  см. предыдущее определение "ID_FILE_SAVE"
+  
+  Создание кода...
+  cppMFC.vcxproj -> D:\Project\DefaultMFC\cppMFC\x64\Debug\cppMFC.exe

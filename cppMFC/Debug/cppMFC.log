@@ -1,0 +1,24 @@
+﻿  CMyFrameWnd.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+D:\Project\DefaultMFC\cppMFC\resource.h(16,1): warning C4005: ID_FILE_OPEN: изменение макроопределения
+  (компиляция исходного файла "CMyFrameWnd.cpp")
+  D:\Program\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\atlmfc\include\afxres.h(215,1):
+  см. предыдущее определение "ID_FILE_OPEN"
+  
+D:\Project\DefaultMFC\cppMFC\resource.h(17,1): warning C4005: ID_FILE_SAVE: изменение макроопределения
+  (компиляция исходного файла "CMyFrameWnd.cpp")
+  D:\Program\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\atlmfc\include\afxres.h(217,1):
+  см. предыдущее определение "ID_FILE_SAVE"
+  
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(207,37): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(208,37): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(223,49): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(224,57): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(228,75): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(233,94): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(233,41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(237,96): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(237,42): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(241,94): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Project\DefaultMFC\cppMFC\CMyFrameWnd.cpp(241,41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  cppMFC.vcxproj -> D:\Project\DefaultMFC\cppMFC\Debug\cppMFC.exe

@@ -8,6 +8,11 @@
 #define IDD_DIALOG1                     106
 #define IDC_LIST1                       1001
 #define IDC_EDIT1                       1002
+#define IDC_EDIT2                       1006
+#define IDC_EDIT3                       1007
+#define IDC_LIST2                       1003
+#define IDC_LIST3                       1004
+#define IDC_LIST4                       1005
 #define ID_FILE_OPEN                    40001
 #define ID_FILE_SAVE                    40002
 #define ID_FILE_DELETE                  40003
@@ -33,7 +38,7 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        108
-#define _APS_NEXT_COMMAND_VALUE         40023
+#define _APS_NEXT_COMMAND_VALUE         40024
 #define _APS_NEXT_CONTROL_VALUE         1003
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
